@@ -1,5 +1,7 @@
 const WebSocket = require('ws')
-const url = process.env.PORT || 'ws://localhost:3000'
+const port = process.env.PORT || 3000
+const defaultUrl = `ws://localhost:${port}`
+const url = process.env.WS_URL || defaultUrl
 const ws = new WebSocket(url)
 const log = require('./log')('SOCKET-CLIENT')
 

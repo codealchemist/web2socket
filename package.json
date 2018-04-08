@@ -1,0 +1,33 @@
+{
+  "name": "web2socket",
+  "version": "1.0.0",
+  "description": "Broadcasts data sent through web requests to all connected socket clients.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "standard-focus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codealchemist/web2socket.git"
+  },
+  "keywords": [
+    "web",
+    "socket",
+    "broadcast",
+    "discovery"
+  ],
+  "author": "Alberto Miranda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codealchemist/web2socket/issues"
+  },
+  "homepage": "https://github.com/codealchemist/web2socket#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "https-enforcer": "^1.0.0",
+    "printii": "^1.0.0",
+    "standard-focus": "^1.1.2"
+  }
+}

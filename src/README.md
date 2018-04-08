@@ -8,7 +8,7 @@ Broadcasts data sent through web requests to all connected socket clients.
 
 ## Usage
 
-Send web requests to the root URL of your running instance of *web2socket*.
+Send web requests to the root URL of your running instance of **web2socket**.
 
 GET query params or POST body will be broadcasted to all connected socket clients.
 
@@ -32,5 +32,15 @@ the request to http://localhost:3000 and send:
 
 Socket clients will receive exactly the same data.
 
+## Local test
+
+To test socket messaging you can start **web2socket** on one shell:
+`npm start`
+
+Start a client on another shell:
+`node src/socket-client.js`
+
+And run the test client on another one:
+`node src/socket-client-test.js` 
 
 Enjoy!
